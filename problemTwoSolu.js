@@ -15,4 +15,4 @@ data.accidents.forEach(accident => {
 
 // Write the modified data to result.json
 const result = JSON.stringify(data, null, 2);
-fs.writeFileSync('output2.json', result);
+fs.writeFileSync('result.json', result);
