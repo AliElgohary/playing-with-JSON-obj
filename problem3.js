@@ -15,7 +15,14 @@ const securityQuestions = [
 
 // Complete this function to check if the answer to the question is valid or not and return a boolean
 function chksecurityQuestions(securityQuestions, question, ans) {
-  // your code here true or false
+  for (let i = 0; i < securityQuestions.length; i++) {
+    if (
+        securityQuestions[i].question == question &&
+        securityQuestions[i].expectedAnswer == ans
+    )
+        return true;
+    else return false;
+}
 }
 
 const cases = [

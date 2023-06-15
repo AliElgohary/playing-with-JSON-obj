@@ -18,6 +18,12 @@ const students = [
 ];
 
 // complete this function to return the list of characters below 20 age
-function returnMinors(arr) {}
-
+function returnMinors(arr) {
+  let underTwenty = [];
+  for (let i = 0; i < arr.length; i++) {
+      if (arr[i].age < 20) underTwenty.push(arr[i].name);
+  }
+  return underTwenty;
+}
+  
 console.log(returnMinors(students));
